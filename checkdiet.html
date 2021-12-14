@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Be In Shape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Check Your Diet!">
+<link rel="stylesheet" href="css/bootstrap4PaddingMargins.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+<link rel="stylesheet" id="x-google-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Lato:700,500,400|Oswald:700&subset=latin,latin-ext&ver=4.6.4" type="text/css" media="all">
+<link href="css/survey.css?id=feb3b42d85a6658e1866" rel="stylesheet">
+<link href="css/member.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.9/metisMenu.min.css" rel="stylesheet">
+<style>
+    * {
+  box-sizing: border-box;
+}
+    body {
+  margin: 0;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('img/contrasticon.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('img/contrasticon.png');
+  cursor: pointer;
+}
+.mailbox{
+	  width: 60%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.simg {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body class="survey-aka1-v3">
+
+<div style="z-index: 100; margin:0; padding: 10px; width: 100%; height: 50px; background-color: #f8f8f8; color: #6f6f6f; border-bottom: 1px solid #e7e7e7; position: relative; top: 0; box-sizing: border-box;">
+<div style="margin:0; padding: 0; width: 49%; display: inline-block;">
+<a href="index.html">LOGO</a>
+</div>
+<div style="margin:0; padding: 0; width: 49%; text-align: right; display: inline-block;">
+<div id="topMenu">
+<a href="#" id='topMenu-link' alt="menu navigation" style="color: #6f6f6f; font-size: 20px;" aria-label="Home"><i class="fa fa-th" aria-hidden="true"></i></a>
+<div id="topMenu-pop" style="position: absolute; right: 0; top: 50px; text-align: left; padding: 1em; background-color: #f8f8f8; color: #6f6f6f; border: 1px solid #e7e7e7; display: none; z-index: 9;">
+<ul style="list-style-type: none; padding-left: 0;">
+<li><a href="#" target="_blank" style="color: #6f6f6f;" aria-label="Home">Home</a></li>
+<li><a href="#" target="_blank" style="color: #6f6f6f;">Blog</a></li>
+<li><a href="#" target="_blank" style="color: #6f6f6f;">Store</a></li>
+<li><a href="#" target="_blank" style="color: #6f6f6f;">Help Center</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<main>
+<form class="" id="surveyForm" accept-charset="UTF-8" action="">
+<input id="gender"  type="hidden" value="" />
+<input id="age"  type="hidden" value="" />
+<input id="height"  type="hidden" value="" />
+<input id="weight"  type="hidden" value="" />
+<input id="activity"  type="hidden" value="" />
+
+
+</div>
+<div class="container container-narrow page text-center" id="page1" style=display:none>
+<div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center my-4 p-2">What is your age range?</h2>
+<div class="container p-3">
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('18')" aria-label="teens"><img class="img-fluid" src="img/men-teens.png" alt="teens" test-id="teensButtonMale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('25')" aria-label="20s"><img class="img-fluid" src="img/men-20.png" alt="20s" test-id="20sButtonMale"></a>
+</div>
+</div>
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('35')" aria-label="30s"><img class="img-fluid" src="img/men-30.png" alt="30s" test-id="30sButtonMale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('45')" aria-label="40s"><img class="img-fluid" src="img/men-40.png" alt="40s" test-id="40sButtonMale"></a>
+</div>
+</div>
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('55')" aria-label="50s"><img class="img-fluid" src="img/men-50.png" alt="50s" test-id="50sButtonMale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('65')" aria-label="60s"><img class="img-fluid" src="img/men-60.png" alt="60s" test-id="60sButtonMale"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container container-narrow page text-center" id="page1Female" style=display:none>
+<div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center my-4 p-2">What is your age range?</h2>
+<div class="container p-3">
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('18')" aria-label="teens"><img class="img-fluid" src="img/women-teens.png" alt="teens" test-id="teensButtonFemale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('25')" aria-label="20s"><img class="img-fluid" src="img/women-20.png" alt="20s" test-id=" 20sButtonFemale"></a>
+</div>
+</div>
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('35')" aria-label="30s"><img class="img-fluid" src="img/women-30.png" alt="30s" test-id="30sButtonFemale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('45')" aria-label="40s"><img class="img-fluid" src="img/women-40.png" alt="40s" test-id="40sButtonFemale"></a>
+</div>
+</div>
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('55')" aria-label="50s"><img class="img-fluid" src="img/women-50.png" alt="50s" test-id="50sButtonFemale"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" onClick="step2('65')" aria-label="60s"><img class="img-fluid" src="img/women-60.png" alt="60s" test-id="60sButtonFemale"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- for height start -->
+<div class="container container-narrow page text-center" id="pageHeight" style="display:none">
+ <div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0 pb-5">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center mt-4 p-2">What is your height?</h2>
+<div class="imperial" id="imperial">
+<h2 class="survey-subheader p-3">Height: <span id="inchesVal" >0' 0"</span></h2>
+</div>
+<div class="metric" id="metric" style="display:none">
+<h2 class="survey-subheader p-3">Height: <span id="centimetersVal" >0</span> cm</h2>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input onClick="imperial()" id="checkbox1" class="form-check-input" type="radio" checked="true" /> Imperial
+</label>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input onClick="metric()" id="checkbox2" class="form-check-input" type="radio" name="units" id="unitsMetric" test-id="metricRadioButton" value="metric"> Metric
+</label>
+</div>
+<div class="imperial" id="imperial1">
+<div class="form-group mt-3">
+<label for="inches" class="mr-3">Inches</label>
+<input type="range" min="0" max="96" value="0" class="slider" id="range1">
+</div>
+</div>
+<div class="metric" id="metric1" style="display: none">
+<div class="form-group mt-3">
+<label for="centimeters" class="mr-4">Centimeters</label>
+<input type="range" min="1" max="220" value="0" class="slider" id="range2">
+</div>
+</div>
+<a href="#" test-id="heightContinueButton" class="button" onClick="step3()">Continue</a>
+</div>
+</div>
+</div>
+</div>
+<!-- for height end-->
+
+
+<!-- for weight start -->
+<div class="container container-narrow page text-center" id="pageWeight" style="display:none">
+ <div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0 pb-5">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+ <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="55"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center mt-4 p-2">How much do you weigh?</h2>
+<div class="imperial" id="imperial2">
+<h2 class="survey-subheader p-3">Weight: <span id="poundsVal" test-id="imperialWeightLabel">0</span> lbs</h2>
+</div>
+<div class="metric" id="metric2" style="display:none">
+<h2 class="survey-subheader p-3">Weight: <span id="kilogramsVal" >0</span> kg</h2>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input onClick="imperial1()" class="form-check-input" type="radio" id="checkbox3" checked="true" /> POUND
+</label>
+</div>
+<div class="form-check form-check-inline">
+<label class="form-check-label">
+<input onClick="metric1()" class="form-check-input" type="radio" id="checkbox4" /> KG
+</label>
+</div>
+<div class="imperial" id="imperial3">
+<div class="form-group mt-3">
+<div class="form-group">
+<label for="weight" class="mr-3">Pounds</label>
+<input type="range" min="0" max="400" value="0" class="slider" id="range3">
+</div>
+</div>
+</div>
+<div class="metric" id="metric3" style="display: none">
+<div class="form-group mt-3">
+<div class="form-group">
+<label for="kilograms" class="mr-3">Kilograms</label>
+<input type="range" min="0" max="200" value="0" class="slider" id="range4">
+</div>
+</div>
+</div>
+<a href="#" test-id="heightContinueButton" class="button" onClick="step4()">Continue</a>
+</div>
+</div>
+</div>
+</div>
+<!-- for weight end -->
+
+
+
+<!-- for activity start -->
+<div class="container container-narrow page text-center" id="pageActivity" style="display:none">
+<div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0 pb-5">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center my-4 p-2">How active are you?</h2>
+<div class="container p-3">
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" test-id="activityLightMale" onClick="step5(1)" aria-label="Lightly Active"><img class="img-fluid" src="img/lightly-active.png" alt="Lightly Active"></a>
+</div>
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" test-id="activityModerateMale" onClick="step5(2)" aria-label="Moderately Active"><img class="img-fluid" src="img/moderately-active.png" alt="Moderately Active"></a>
+</div>
+ </div>
+<div class="row">
+<div class="col-6 col-md-4 offset-md-1 mx-auto mb-4">
+<a href="#" test-id="activityVeryMale" onClick="step5(3)" aria-label="Very Active"><img class="img-fluid" src="img/very-active.png" alt="Very Active"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- for activity end -->
+
+
+<!-- for email start -->
+<div class="container container-narrow page text-center" id="pagemail" style="display:none">
+<div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0 pb-5">
+<h3 class="pt-4 survey-header">Find out EXACTLY What Diet is Best For You</h3>
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+</div>
+</div>
+</div>
+<h2 class="survey-subheader text-center my-4 p-2">Need your email to share latest health tips!</h2>
+
+<label for="weight" class="mr-3">Email:</label>
+<input type="email" id="mail" class="mailbox" /><br/>
+<br/>
+
+
+<a href="#" test-id="heightContinueButton" class="button" onClick="step6()">Continue</a>
+
+</div>
+</div>
+</div>
+</div>
+<!-- for email end -->
+
+<!-- for result start -->
+<div class="container container-narrow page text-center" id="pageresult" style="display:none">
+<div class="well semi-trans">
+<div class="row">
+<div class="col-md-10 offset-md-1 p-0 pb-5">
+<h3  >Your Daily Goal</h3>
+<h5 style="color:red;" id="result1"></h5>
+
+<div class="container my-4">
+<div class="outer-progress">
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+</div>
+<h5 >Select a meal below to get started</h5>
+<br/>
+ <!-- Swiper start -->
+<div class="container">
+  <div class="mySlides">
+    <a href="#"><img class="simg" src="img/recipe-guide.jpg" style="width:100%"><a/>
+  </div>
+
+  <div class="mySlides">
+    <a href="#"><img class="simg" src="img/big-arms-program.jpg" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides">
+    <a href="#"><img class="simg" src="img/six-pack-shred.jpg" style="width:100%"></a>
+  </div>
+    
+  <div class="mySlides">
+    <a href="#"> <img class="simg" src="img/toned-in-90-days.jpg" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides">
+    <a href="#"><img class="simg" src="img/clean-bulk-program.jpg" style="width:100%"></a>
+  </div>
+    
+  <div class="mySlides">
+    <a href="#"><img class="simg" src="img/ripped-in-90-days.jpg" style="width:100%"></a>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/recipe-guide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/big-arms-program.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/six-pack-shred.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/toned-in-90-days.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/clean-bulk-program.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/ripped-in-90-days.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+    <!-- Swiper start -->
+    <br />
+    <br />
+    <br />
+<a href="#" test-id="heightContinueButton" class="button" onClick="product()">See all square meals</a>
+<a href="#" test-id="heightContinueButton" class="button" onClick="back()">Back To Homepage</a>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- for result end -->
+
+</form>
+</main>
+<div class="sp-footer-spacer" style="height: 64px; width: 100%;"></div>
+<div class="container-fluid sp-footer">
+<div class="container-fluid py-1 px-0" style="border-bottom: 1px solid #898989;">
+<div class="container">
+LOGO image in Small size
+</div>
+</div>
+<div class="container">
+<div class="row pt-2">
+<div class="col-sm-4">
+<div class="row">
+<div class="col-xs-6 m-0">
+<!-- <ul class="m-0">
+<li class="m-1"><a href="#" target="_blank">Home</a></li>
+<li class="m-1"><a href="#" target="_blank">Programs</a></li>
+<li class="m-1 mb-0"><a href="#" target="_blank">Blog</a></li>
+</ul> -->
+</div>
+<div class="col-xs-6 m-0">
+<!-- <ul class="m-0">
+<li class="m-1"><a href="#" target="_blank">Privacy Policy</a></li>
+<li class="m-1"><a href="#" target="_blank">Terms & Conditions</a></li>
+<li class="m-1"><a href="#" target="_blank">Help Center</a></li>
+</ul> -->
+</div>
+</div>
+<p class="mt-2">
+© Designed By Muhammad Tanveer.
+</p>
+</div>
+<div class="col-sm-8">
+<p class="mt-0 mb-2">
+	<a href="#">Privacy Policy</a>
+</p>
+<p class="mt-0 mb-2">
+	<a href="#">Terms & Conditions</a>
+</p>
+<p class="mt-0 mb-2">
+	<a href="#" >Help Center</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/navMenu.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>
